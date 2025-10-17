@@ -27,13 +27,13 @@ const subjects: Subject[] = [
     lessons: 24
   },
   {
-    id: 'russian',
-    name: 'Русский язык',
-    icon: 'BookOpen',
-    color: 'text-[#0EA5E9]',
-    bgColor: 'bg-[#0EA5E9]/10',
-    progress: 48,
-    lessons: 32
+    id: 'english',
+    name: 'Английский язык',
+    icon: 'Languages',
+    color: 'text-[#F97316]',
+    bgColor: 'bg-[#F97316]/10',
+    progress: 30,
+    lessons: 20
   },
   {
     id: 'world',
@@ -45,14 +45,13 @@ const subjects: Subject[] = [
     lessons: 18
   },
   {
-    id: 'english',
-    name: 'Английский язык',
-    icon: 'Languages',
-    color: 'text-[#F97316]',
-    bgColor: 'bg-[#F97316]/10',
-    progress: 30,
-    lessons: 20,
-    optional: true
+    id: 'russian',
+    name: 'Русский язык',
+    icon: 'BookOpen',
+    color: 'text-[#0EA5E9]',
+    bgColor: 'bg-[#0EA5E9]/10',
+    progress: 48,
+    lessons: 32
   }
 ];
 
@@ -112,11 +111,7 @@ const Index = () => {
                     <h3 className="text-2xl font-bold text-gray-800">
                       {subject.name}
                     </h3>
-                    {subject.optional && (
-                      <Badge variant="outline" className="text-xs">
-                        по желанию
-                      </Badge>
-                    )}
+
                   </div>
                   <p className="text-gray-600">
                     {subject.lessons} уроков
